@@ -29,12 +29,21 @@ scene.add(box);
 box.rotation.set(0.5, 0.5, 0);
 box.position.set(250, 250, -250);
 
-var shape = new THREE.CylinderGeometry(1, 100, 100, 4);
+var shape = new THREE.CylinderGeometry(100, 1, 300, 4);
 var cover = new THREE.MeshNormalMaterial(flat);
 var tube = new THREE.Mesh(shape, cover);
 scene.add(tube);
 tube.rotation.set(0.5, 0, 0);
-tube.position.set(250,-250,-250);
+tube.position.set (.100, 300, -50);
+
+var shape = new THREE.PlaneGeometry(100, 400, 300, 400);
+var cover = new THREE.MeshNormalMaterial(flat);
+var grounde=  new THREE.Mesh(shape, cover);
+scene.add(grounde);
+grounde.rotation.set(0.5, 0, 0);
+grounde.position.set (-499,-250,-250);
+
+
 
 
 
