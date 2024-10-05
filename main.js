@@ -23,7 +23,7 @@ var cover = new THREE.MeshNormalMaterial(flat);
 var ball = new THREE.Mesh(shape, cover);
 scene.add(ball);
 ball.position.set(-250,250,-250);
-var shape = new THREE.CubeGeometry(100, 100, 100);
+var shape = new THREE.BoxGeometry(100, 100, 100);
 var cover = new THREE.MeshNormalMaterial(flat);
 var box = new THREE.Mesh(shape, cover);
 scene.add(box);
